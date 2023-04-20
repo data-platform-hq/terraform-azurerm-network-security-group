@@ -1,4 +1,4 @@
-# Azure Network security group Terraform module
+# Azure Network Security Group Terraform module
 Terraform module for creation Azure Network security group
 
 ## Usage
