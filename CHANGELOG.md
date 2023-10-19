@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/data-platform-hq/terraform-azurerm-network-security-group/compare/v1.0.0...v1.1.0) (2023-10-19)
+
+
+### Features
+
+* support 'source_address_prefixes' rule parameter ([c7e21fe](https://github.com/data-platform-hq/terraform-azurerm-network-security-group/commit/c7e21fe45d5879f13bbf538a76cfc5864fc41a4b))
+
 # 1.0.0 (2023-04-24)
 
 
