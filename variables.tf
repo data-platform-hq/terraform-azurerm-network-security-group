@@ -41,6 +41,7 @@ variable "security_rules" {
     source_port_range          = optional(string)
     destination_port_range     = optional(string)
     source_address_prefix      = optional(string)
+    source_address_prefixes    = optional(list(string))
     destination_address_prefix = optional(string)
   }))
   description = "List of objects representing security rules"
