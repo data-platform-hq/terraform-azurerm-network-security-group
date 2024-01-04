@@ -1,11 +1,6 @@
-variable "project" {
+variable "nsg_name" {
   type        = string
-  description = "Project name"
-}
-
-variable "env" {
-  type        = string
-  description = "Environment name"
+  description = "Network Security Group name"
 }
 
 variable "location" {
@@ -24,25 +19,22 @@ variable "tags" {
   default     = {}
 }
 
-variable "custom_nsg_name" {
-  type        = string
-  description = "Custom network security group name"
-  default     = null
-}
-
 variable "security_rules" {
   type = list(object({
-    name                       = optional(string)
-    description                = optional(string)
-    priority                   = optional(number)
-    direction                  = optional(string)
-    access                     = optional(string)
-    protocol                   = optional(string)
-    source_port_range          = optional(string)
-    destination_port_range     = optional(string)
-    source_address_prefix      = optional(string)
-    source_address_prefixes    = optional(list(string))
-    destination_address_prefix = optional(string)
+    name                         = string
+    priority                     = number
+    direction                    = string
+    access                       = string
+    protocol                     = string
+    description                  = optional(string, null)
+    source_port_range            = optional(string, null)
+    source_port_ranges           = optional(list(string), [])
+    destination_port_range       = optional(string, null)
+    destination_port_ranges      = optional(list(string), [])
+    source_address_prefix        = optional(string, null)
+    source_address_prefixes      = optional(list(string), [])
+    destination_address_prefix   = optional(string, null)
+    destination_address_prefixes = optional(list(string), [])
   }))
   description = "List of objects representing security rules"
   default     = []
