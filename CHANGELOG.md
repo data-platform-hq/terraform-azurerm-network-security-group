@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/data-platform-hq/terraform-azurerm-network-security-group/compare/v1.1.0...v1.2.0) (2024-01-05)
+
+
+### Features
+
+* updated naming convention ([560bc4f](https://github.com/data-platform-hq/terraform-azurerm-network-security-group/commit/560bc4f4b199cb839a13da903c6e18861cba177c))
+
 # [1.1.0](https://github.com/data-platform-hq/terraform-azurerm-network-security-group/compare/v1.0.0...v1.1.0) (2023-10-19)
 
 
