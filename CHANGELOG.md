@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/data-platform-hq/terraform-azurerm-network-security-group/compare/v1.2.0...v1.3.0) (2024-09-13)
+
+
+### Bug Fixes
+
+* replaced pre-commit repo docs creation/update by GH Actions ([893ab59](https://github.com/data-platform-hq/terraform-azurerm-network-security-group/commit/893ab5995f5737d5924ad14db0ee249a51841ba2))
+
+
+### Features
+
+* upgrade to azurerm v4 ([385dceb](https://github.com/data-platform-hq/terraform-azurerm-network-security-group/commit/385dcebe03140138fabd44065adf50af76e077bf))
+
 # [1.2.0](https://github.com/data-platform-hq/terraform-azurerm-network-security-group/compare/v1.1.0...v1.2.0) (2024-01-05)
 
 
