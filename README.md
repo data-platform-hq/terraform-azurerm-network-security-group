@@ -38,14 +38,14 @@ module "network_security_group" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0 |
-| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 4.0.1 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.0 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 4.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | >= 4.0.1 |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | ~> 4.0 |
 
 ## Modules
 
@@ -64,7 +64,7 @@ No modules.
 | <a name="input_location"></a> [location](#input\_location) | Specifies the supported Azure location where the resource exists | `string` | n/a | yes |
 | <a name="input_nsg_name"></a> [nsg\_name](#input\_nsg\_name) | Network Security Group name | `string` | n/a | yes |
 | <a name="input_resource_group"></a> [resource\_group](#input\_resource\_group) | The name of the resource group in which resources is created | `string` | n/a | yes |
-| <a name="input_security_rules"></a> [security\_rules](#input\_security\_rules) | List of objects representing security rules | <pre>list(object({<br>    name                         = string<br>    priority                     = number<br>    direction                    = string<br>    access                       = string<br>    protocol                     = string<br>    description                  = optional(string, null)<br>    source_port_range            = optional(string, null)<br>    source_port_ranges           = optional(list(string), [])<br>    destination_port_range       = optional(string, null)<br>    destination_port_ranges      = optional(list(string), [])<br>    source_address_prefix        = optional(string, null)<br>    source_address_prefixes      = optional(list(string), [])<br>    destination_address_prefix   = optional(string, null)<br>    destination_address_prefixes = optional(list(string), [])<br>  }))</pre> | `[]` | no |
+| <a name="input_security_rules"></a> [security\_rules](#input\_security\_rules) | List of objects representing security rules | <pre>list(object({<br/>    name                         = string<br/>    priority                     = number<br/>    direction                    = string<br/>    access                       = string<br/>    protocol                     = string<br/>    description                  = optional(string, null)<br/>    source_port_range            = optional(string, null)<br/>    source_port_ranges           = optional(list(string), [])<br/>    destination_port_range       = optional(string, null)<br/>    destination_port_ranges      = optional(list(string), [])<br/>    source_address_prefix        = optional(string, null)<br/>    source_address_prefixes      = optional(list(string), [])<br/>    destination_address_prefix   = optional(string, null)<br/>    destination_address_prefixes = optional(list(string), [])<br/>  }))</pre> | `[]` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A mapping of tags to assign to the resource | `map(string)` | `{}` | no |
 
 ## Outputs
